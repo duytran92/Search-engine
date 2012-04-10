@@ -12,11 +12,11 @@ private:
     int occurence_;
 public:
     Document();
-    Document(string docname);
+    Document(string name);
     string name();
-    void name(string docname);
+    void name(string name);
     int occurrence();
-    void occurrence(int n);
+    void occurrence(int occurrence);
     void increaseOccurrence(int n);
 };
 
