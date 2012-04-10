@@ -5,12 +5,14 @@
  *******************************/
 INodeData::INodeData()
 {
-    sorted = false;
+    this->word_ = "";
+    this->sorted_ = false;
 }
 
-INodeData::INodeData(string w)
+INodeData::INodeData(string word)
 {
-    this->word_ = w;
+    this->word_ = word;
+    this->sorted_ = false;
 }
 
 /*******************************
@@ -50,5 +52,4 @@ void INodeData::docs(Document doc)
 
 vector<Document> INodeData::conjunct(INodeData *node_data)
 {
-
 }
